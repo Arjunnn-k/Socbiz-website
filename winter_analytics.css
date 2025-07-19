@@ -1,0 +1,427 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #ffffff;
+}
+
+/* Header Styles */
+.header {
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #f0f0f0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  background: #00c389;
+  padding: 8px;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-text h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.logo-text p {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00c389;
+}
+
+/* Hero Section */
+.event-hero {
+  padding: 120px 20px 60px;
+  text-align: center;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+}
+
+.event-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #00c389;
+  margin-bottom: 20px;
+}
+
+.event-hero .subtitle {
+  font-size: 1.5rem;
+  color: #374151;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.event-hero .description {
+  font-size: 1.125rem;
+  color: #6b7280;
+  max-width: 1000px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Event Details */
+.event-details {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.event-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.info-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #00c389;
+}
+
+.info-card h3 {
+  color: #00c389;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.info-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Competition Description */
+.competition-description {
+  background: #f9fafb;
+  padding: 40px;
+  border-radius: 12px;
+  margin: 40px 0;
+}
+
+.competition-description h2 {
+  color: #00c389;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.competition-description p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+/* Agenda Section */
+.agenda-section {
+  background: #f9fafb;
+  padding: 60px 40px;
+  border-radius: 12px;
+  margin: 40px 0;
+}
+
+.agenda-section h2 {
+  text-align: center;
+  color: #00c389;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.agenda-item {
+  background: white;
+  margin: 20px 0;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.agenda-item h4 {
+  color: #00c389;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.agenda-item p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Why Participate */
+.why-participate {
+  background: #f9fafb;
+  padding: 60px 40px;
+  border-radius: 12px;
+  margin: 40px 0;
+}
+
+.why-participate h2 {
+  text-align: center;
+  color: #00c389;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.benefit-item {
+  background: white;
+  margin: 20px 0;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-item h4 {
+  color: #00c389;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.benefit-item p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Register Section */
+.register-section {
+  text-align: center;
+  padding: 60px 40px;
+  background: linear-gradient(135deg, #00c389 0%, #059669 100%);
+  color: white;
+  border-radius: 12px;
+  margin: 40px 0;
+}
+
+.register-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.register-section p {
+  font-size: 1.125rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+.register-btn {
+  background: white;
+  color: #00c389;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.register-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Footer */
+.site-footer {
+  background: #111827;
+  color: white;
+  padding: 48px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+}
+
+.footer-left {
+  max-width: 400px;
+}
+
+.footer-logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.footer-logo-icon {
+  background: #00c389;
+  padding: 8px;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo-text h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.footer-logo-text p {
+  font-size: 14px;
+  color: #9ca3af;
+  margin: 0;
+}
+
+.footer-description {
+  color: #9ca3af;
+  line-height: 1.6;
+}
+
+.footer-links h4 {
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #9ca3af;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+.footer-socials h4 {
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  background: #374151;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+  background: #4b5563;
+}
+
+.footer-bottom {
+  border-top: 1px solid #374151;
+  margin-top: 32px;
+  padding-top: 32px;
+  text-align: center;
+  color: #9ca3af;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .event-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .event-hero .subtitle {
+    font-size: 1.25rem;
+  }
+  
+  .event-info {
+    grid-template-columns: 1fr;
+  }
+  
+  .agenda-section,
+  .why-participate,
+  .competition-description,
+  .register-section {
+    padding: 40px 20px;
+  }
+  
+  .agenda-section h2,
+  .why-participate h2 {
+    font-size: 2rem;
+  }
+}
